@@ -1,0 +1,10 @@
+{
+  "domain": "honeygain",
+  "name": "HoneygainHAview",
+  "codeowners": ["@Dendrob"],
+  "config_flow": true,
+  "documentation": "https://github.com/Dendrob/HoneygainHAview",
+  "iot_class": "cloud_polling",
+  "requirements": ["pyHoneygain==0.3.9"],
+  "version": "1.0.0"
+}

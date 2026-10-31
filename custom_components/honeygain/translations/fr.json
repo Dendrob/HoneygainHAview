@@ -1,0 +1,21 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connexion à HoneygainHAview",
+        "description": "Saisissez les identifiants de votre compte Honeygain.",
+        "data": {
+          "email": "Adresse e-mail",
+          "password": "Mot de passe"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de se connecter à Honeygain.",
+      "invalid_auth": "Les identifiants ont été refusés ou l'authentification a échoué."
+    },
+    "abort": {
+      "already_configured": "Ce compte Honeygain est déjà configuré."
+    }
+  }
+}

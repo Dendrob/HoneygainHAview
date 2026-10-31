@@ -1,0 +1,21 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to HoneygainHAview",
+        "description": "Enter your Honeygain account credentials.",
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to connect to Honeygain.",
+      "invalid_auth": "The credentials were rejected or authentication failed."
+    },
+    "abort": {
+      "already_configured": "This Honeygain account is already configured."
+    }
+  }
+}

@@ -1,0 +1,94 @@
+title: HoneygainHAview
+views:
+  - title: Vue d'ensemble
+    path: honeygain
+    icon: mdi:cash-multiple
+    cards:
+      - type: entities
+        title: Données Honeygain
+        show_header_toggle: false
+        entities:
+          - entity: sensor.honeygain_account
+          - entity: sensor.honeygain_devices
+          - entity: sensor.honeygain_earnings
+          - entity: sensor.honeygain_jumptask_earnings
+          - entity: sensor.honeygain_earnings_today
+          - entity: sensor.honeygain_jumptask_earnings_today
+          - entity: sensor.honeygain_wallet_stats
+          - entity: sensor.honeygain_balances
+          - entity: sensor.honeygain_payouts
+          - entity: sensor.honeygain_notifications
+          - entity: sensor.honeygain_honey_pot
+          - entity: sensor.honeygain_jumptask_wallet
+      - type: markdown
+        title: Compte
+        content: |
+          ```json
+          {{ state_attr('sensor.honeygain_account', 'data') | to_json(pretty_print=True) }}
+          ```
+      - type: markdown
+        title: Appareils
+        content: |
+          ```json
+          {{ state_attr('sensor.honeygain_devices', 'data') | to_json(pretty_print=True) }}
+          ```
+      - type: markdown
+        title: Gains des 30 derniers jours
+        content: |
+          ```json
+          {{ state_attr('sensor.honeygain_earnings', 'data') | to_json(pretty_print=True) }}
+          ```
+      - type: markdown
+        title: Gains JumpTask des 30 derniers jours
+        content: |
+          ```json
+          {{ state_attr('sensor.honeygain_jumptask_earnings', 'data') | to_json(pretty_print=True) }}
+          ```
+      - type: markdown
+        title: Gains du jour
+        content: |
+          ```json
+          {{ state_attr('sensor.honeygain_earnings_today', 'data') | to_json(pretty_print=True) }}
+          ```
+      - type: markdown
+        title: Gains JumpTask du jour
+        content: |
+          ```json
+          {{ state_attr('sensor.honeygain_jumptask_earnings_today', 'data') | to_json(pretty_print=True) }}
+          ```
+      - type: markdown
+        title: Statistiques du portefeuille
+        content: |
+          ```json
+          {{ state_attr('sensor.honeygain_wallet_stats', 'data') | to_json(pretty_print=True) }}
+          ```
+      - type: markdown
+        title: Soldes
+        content: |
+          ```json
+          {{ state_attr('sensor.honeygain_balances', 'data') | to_json(pretty_print=True) }}
+          ```
+      - type: markdown
+        title: Paiements
+        content: |
+          ```json
+          {{ state_attr('sensor.honeygain_payouts', 'data') | to_json(pretty_print=True) }}
+          ```
+      - type: markdown
+        title: Notifications
+        content: |
+          ```json
+          {{ state_attr('sensor.honeygain_notifications', 'data') | to_json(pretty_print=True) }}
+          ```
+      - type: markdown
+        title: Honey Pot
+        content: |
+          ```json
+          {{ state_attr('sensor.honeygain_honey_pot', 'data') | to_json(pretty_print=True) }}
+          ```
+      - type: markdown
+        title: Portefeuille JumpTask
+        content: |
+          ```json
+          {{ state_attr('sensor.honeygain_jumptask_wallet', 'data') | to_json(pretty_print=True) }}
+          ```
